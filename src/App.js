@@ -1,13 +1,13 @@
-import GridLayout from './Components/GridLayout';
-import './App.css';
+import GridLayout from "./Components/GridLayout";
+import "./App.css";
 
 
 
 function App() {
   return (
-    <div className="App">
-      <GridLayout/>
-    </div>
+      <div className="App">
+        <GridLayout />
+      </div>
   );
 }
 
