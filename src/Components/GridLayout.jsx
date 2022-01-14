@@ -2,12 +2,13 @@ import React from "react";
 import Daniel from "../images/image-daniel.jpg";
 import Jonathan from "../images/image-jonathan.jpg";
 import Kira from "../images/image-kira.jpg";
+import Patrick from "../images/image-patrick.jpg";
+import Jeanette from "../images/image-jeanette.jpg";
 import { Box, Flex } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { Center } from "@chakra-ui/react";
 import { Grid, GridItem } from "@chakra-ui/react";
-
 
 const GridLayout = () => {
   return (
@@ -15,10 +16,10 @@ const GridLayout = () => {
       <Center w="100%" bgColor="hsl(0, 0%, 81%)">
         <Grid
           w="95%"
-          maxW="1280px"
+          maxW="1200px"
           templateColumns="repeat(5,1fr)"
-          gap= "10px"
-          my="7.55rem"
+          gap="20px"
+          my="2rem"
         >
           <GridItem
             rowSpan={1}
@@ -43,7 +44,7 @@ const GridLayout = () => {
               </Box>
             </Flex>
             <Text
-              mt="1.3rem"
+              mt="1.6rem"
               ml="0.2rem"
               color=" hsl(0, 0%, 100%)"
               fontWeight="600"
@@ -52,7 +53,14 @@ const GridLayout = () => {
               current, if not more so, in the company I joined. I honestly feel
               I got every penny’s worth.
             </Text>
-            <Text mt="0.8rem" ml="0.2rem" color=" hsl(0, 0%, 100%)">
+            <Text
+              mt="1.8rem"
+              ml="0.2rem"
+              color=" hsl(0, 0%, 100%)"
+              fontFamily="'Barlow Semi Condensed', sans-serif"
+              fontWeight="500"
+              lineHeight="1.4"
+            >
               “ I was an EMT for many years before I joined the bootcamp. I’ve
               been looking to make a transition and have heard some people who
               had an amazing experience here. I signed up for the free intro
@@ -84,8 +92,10 @@ const GridLayout = () => {
             <Text
               mt="1.3rem"
               ml="0.2rem"
+              lineHeight="1.3"
               color=" hsl(0, 0%, 100%)"
               fontWeight="600"
+              fontFamily="'Barlow Semi Condensed', sans-serif"
             >
               The team was very supportive and kept me motivated
             </Text>
@@ -94,6 +104,8 @@ const GridLayout = () => {
               ml="0.2rem"
               color=" hsl(0, 0%, 100%)"
               fontSize="0.9rem"
+              lineHeight="1.4"
+              fontFamily="'Barlow Semi Condensed', sans-serif"
             >
               “ I started as a total newbie with virtually no coding skills. I
               now work as a mobile engineer for a big company. This was one of
@@ -129,6 +141,7 @@ const GridLayout = () => {
               ml="0.2rem"
               color="hsl(219, 29%, 14%)"
               fontWeight="600"
+              fontFamily="'Barlow Semi Condensed', sans-serif"
             >
               Such a life-changing experience. Highly recommended!
             </Text>
@@ -136,7 +149,11 @@ const GridLayout = () => {
               mt="0.8rem"
               ml="0.2rem"
               color="hsl(219, 29%, 14%)"
+              opacity="70%"
+              fontWeight="600"
               fontSize="0.75rem"
+              lineHeight="1.4"
+              fontFamily="'Barlow Semi Condensed', sans-serif"
             >
               “ Before joining the bootcamp, I’ve never written a line of code.
               I needed some structure from professionals who can help me learn
@@ -152,21 +169,88 @@ const GridLayout = () => {
               100% recommend! ”
             </Text>
           </GridItem>
-          <GridItem bgColor="hsl(0, 0%, 100%)" borderRadius="5px">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum
-              sit tempora! Rem tenetur doloribus provident ipsum quam odio
-              officiis nemo unde atque tempora ab nesciunt earum nostrum, porro
-              molestiae.
-            </p>
+          <GridItem bgColor="hsl(0, 0%, 100%)" borderRadius="5px" p="1.3em">
+            <Flex>
+              <Center flex="1" w="100%">
+                <Image src={Jeanette} borderRadius="50%" alt="Daniel-avatar" />
+              </Center>
+              <Box flex="8">
+                <Text mt="0.4rem" color="hsl(219, 29%, 14%)">
+                  Jeanette Harmon
+                </Text>
+                <Text mt="0.2rem" color="hsl(219, 29%, 14%)" opacity="50%">
+                  Verified Graduate
+                </Text>
+              </Box>
+            </Flex>
+            <Text
+              mt="1.6rem"
+              ml="0.2rem"
+              color="hsl(219, 29%, 14%)"
+              fontWeight="600"
+            >
+              An overall wonderful and rewarding experience
+            </Text>
+            <Text
+              mt="1.8rem"
+              ml="0.2rem"
+              color="hsl(219, 29%, 14%)"
+              fontFamily="'Barlow Semi Condensed', sans-serif"
+              fontWeight="500"
+              lineHeight="1.4"
+              fontSize="0.75rem"
+            >
+              “ Thank you for the wonderful experience! I now have a job I
+              really enjoy, and make a good living while doing something I love.
+              ”
+            </Text>
           </GridItem>
-          <GridItem colSpan={3} bgColor="hsl(219, 29%, 14%)" borderRadius="5px">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed cum
-              sit tempora! Rem tenetur doloribus provident ipsum quam odio
-              officiis nemo unde atque tempora ab nesciunt earum nostrum, porro
-              molestiae.
-            </p>
+          <GridItem
+            colSpan={3}
+            bgColor="hsl(219, 29%, 14%)"
+            borderRadius="5px"
+            p="1.3em"
+          >
+            <Flex>
+              <Center flex="1" w="100%">
+                <Image src={Patrick} borderRadius="50%" alt="Daniel-avatar" />
+              </Center>
+              <Box flex="8">
+                <Text mt="0.4rem" color=" hsl(0, 0%, 100%)">
+                  Patrick Abrams
+                </Text>
+                <Text mt="0.2rem" color=" hsl(0, 0%, 100%)" opacity="50%">
+                  Verified Graduate
+                </Text>
+              </Box>
+            </Flex>
+            <Text
+              mt="1.6rem"
+              ml="0.2rem"
+              color=" hsl(0, 0%, 100%)"
+              fontWeight="600"
+              fontSize="18px"
+            >
+              Awesome teaching support from TAs who did the bootcamp themselves.
+              Getting guidance from them and learning from their experiences was
+              easy.
+            </Text>
+            <Text
+              mt="1.8rem"
+              ml="0.2rem"
+              color=" hsl(0, 0%, 100%)"
+              fontFamily="'Barlow Semi Condensed', sans-serif"
+              fontWeight="500"
+              fontSize="0.75rem"
+              lineHeight="1.4"
+            >
+              “ The staff seem genuinely concerned about my progress which I
+              find really refreshing. The program gave me the confidence
+              necessary to be able to go out in the world and present myself as
+              a capable junior developer. The standard is above the rest. You
+              will get the personal attention you need from an incredible
+              community of smart and amazing people. ”
+            </Text>
           </GridItem>
         </Grid>
       </Center>
