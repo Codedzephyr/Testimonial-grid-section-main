@@ -118,7 +118,6 @@ const GridLayout = () => {
                 <Flex flex="1" w="100%" alignItems="center">
                   <Image
                     src={Jonathan}
-                    boxSize="40px"
                     borderRadius="50%"
                     alt="Daniel-avatar"
                   />
@@ -128,7 +127,7 @@ const GridLayout = () => {
                     mt="0.4rem"
                     ml="0.8rem"
                     color=" hsl(0, 0%, 100%)"
-                    fontSize="clamp(0.6rem,10vw,0.9rem)"
+                    fontSize="clamp(0.59rem,10vw,0.9rem)"
                     fontWeight="600"
                   >
                     Jonathan Walters
@@ -172,13 +171,21 @@ const GridLayout = () => {
               bgColor="hsl(0, 0%, 100%)"
               borderRadius="5px"
               p="1.3em"
+              boxShadow="2xl"
             >
               <Flex>
                 <Center flex="1" w="100%">
                   <Image src={Kira} borderRadius="50%" alt="Daniel-avatar" />
                 </Center>
-                <Box flex="4">
-                  <Text mt="0.4rem" ml="0.8rem" color="hsl(219, 29%, 14%)">
+                <Box flex={{ xsml: "4", sm: "7", md: "11", lg: "4", xl: "4" }}>
+                  <Text
+                    mt="0.4rem"
+                    ml="0.8rem"
+                    fontWeight="600"
+                    opacity="90%"
+                    color="hsl(219, 29%, 14%)"
+                    fontSize="clamp(0.6rem,10vw,0.9rem)"
+                  >
                     Kira Whittle
                   </Text>
                   <Text
@@ -195,6 +202,7 @@ const GridLayout = () => {
                 mt="1.3rem"
                 ml="0.2rem"
                 color="hsl(219, 29%, 14%)"
+                opacity="70%"
                 fontWeight="600"
                 lineHeight="1.3"
                 fontSize="clamp(1.1rem,10vw,0.9rem)"
@@ -226,21 +234,29 @@ const GridLayout = () => {
                 receiving multiple offers. 100% recommend! ”
               </Text>
             </GridItem>
-            <GridItem bgColor="hsl(0, 0%, 100%)" borderRadius="5px" p="1.4em">
+            <GridItem
+              boxShadow="2xl"
+              bgColor="hsl(0, 0%, 100%)"
+              borderRadius="5px"
+              p="1.4em"
+            >
               <Flex>
-                <Center flex="1" w="100%">
+                <Flex flex="1" w="100%" alignItems="center">
                   <Image
+                    mt="0.2rem"
                     src={Jeanette}
                     borderRadius="50%"
                     alt="Daniel-avatar"
                   />
-                </Center>
-                <Box flex="4">
+                </Flex>
+                <Box flex={{ xsml: "4", sm: "7", md: "11", lg: "4", xl: "4" }}>
                   <Text
                     mt="0.9rem"
                     ml="0.8rem"
                     fontSize="clamp(0.6rem,10vw,0.9rem)"
                     color="hsl(219, 29%, 14%)"
+                    opacity="70%"
+                    fontWeight="600"
                   >
                     Jeanette Harmon
                   </Text>
@@ -260,6 +276,7 @@ const GridLayout = () => {
                 ml="0.2rem"
                 color="hsl(219, 29%, 14%)"
                 fontWeight="600"
+                opacity="90%"
                 fontSize="clamp(1.1rem,10vw,0.9rem)"
               >
                 An overall wonderful and rewarding experience
@@ -268,6 +285,7 @@ const GridLayout = () => {
                 mt="1.4rem"
                 ml="0.2rem"
                 color="hsl(219, 29%, 14%)"
+                opacity="70%"
                 fontFamily="'Barlow Semi Condensed', sans-serif"
                 fontWeight="500"
                 lineHeight="1.3"
@@ -293,7 +311,7 @@ const GridLayout = () => {
                     alt="Daniel-avatar"
                   />
                 </Flex>
-                <Box flex="11">
+                <Box flex={{ xsml: "3", sm: "5", md: "10", lg: "7", xl: "11" }}>
                   <Text
                     mt="0.4rem"
                     fontSize="clamp(0.6rem,10vw,0.9rem)"
