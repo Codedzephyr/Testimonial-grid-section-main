@@ -18,6 +18,7 @@ const theme = extendTheme({
     },
   },
   breakpoints: {
+    xsml: "280px",
     sm: "320px",
     md: "768px",
     lg: "960px",
@@ -25,8 +26,6 @@ const theme = extendTheme({
     "2xl": "1536px",
   },
 });
-
-
 
 const GridLayout = () => {
   return (
@@ -36,13 +35,18 @@ const GridLayout = () => {
           <Grid
             w="95%"
             maxW="1280px"
-            templateColumns="repeat(5,1fr)"
+            templateColumns={{
+              sm: "repeat(1,1fr)",
+              md: "repeat(1,1fr)",
+              lg: "repeat(5,1fr)",
+              xl: "repeat(5,1fr)",
+            }}
             gap="20px"
             my="2.5rem"
           >
             <GridItem
               rowSpan={1}
-              colSpan={3}
+              colSpan={{ sm: "1", md: "1", lg: "3", xl: "3" }}
               bgColor=" hsl(263, 55%, 52%)"
               bgImage="url('../src')"
               borderRadius="5px"
@@ -58,7 +62,7 @@ const GridLayout = () => {
                     alt="Daniel-avatar"
                   />
                 </Flex>
-                <Box flex="11">
+                <Box flex={{ xsml: "3", sm: "5", md: "10", lg: "7", xl: "11" }}>
                   <Text
                     mt="0.4rem"
                     color=" hsl(0, 0%, 100%)"
@@ -111,14 +115,15 @@ const GridLayout = () => {
             </GridItem>
             <GridItem bgColor="hsl(217, 19%, 35%)" borderRadius="5px" p="1.3em">
               <Flex>
-                <Center flex="1" w="100%">
+                <Flex flex="1" w="100%" alignItems="center">
                   <Image
                     src={Jonathan}
+                    boxSize="40px"
                     borderRadius="50%"
                     alt="Daniel-avatar"
                   />
-                </Center>
-                <Box flex="4">
+                </Flex>
+                <Box flex={{ xsml: "4", sm: "7", md: "11", lg: "4", xl: "4" }}>
                   <Text
                     mt="0.4rem"
                     ml="0.8rem"
@@ -144,7 +149,7 @@ const GridLayout = () => {
                 lineHeight="1.3"
                 color=" hsl(0, 0%, 100%)"
                 fontWeight="600"
-                fontSize="clamp(1.1rem,10vw,0.9rem)"
+                fontSize="clamp(1.1rem,10vw,1.4rem)"
                 fontFamily="'Barlow Semi Condensed', sans-serif"
               >
                 The team was very supportive and kept me motivated
@@ -163,7 +168,7 @@ const GridLayout = () => {
               </Text>
             </GridItem>
             <GridItem
-              rowSpan={2}
+              rowSpan={{ sm: "1", md: "1", lg: "2", xl: "2" }}
               bgColor="hsl(0, 0%, 100%)"
               borderRadius="5px"
               p="1.3em"
@@ -274,14 +279,19 @@ const GridLayout = () => {
               </Text>
             </GridItem>
             <GridItem
-              colSpan={3}
+              colSpan={{ sm: "1", md: "1", lg: "3", xl: "3" }}
               bgColor="hsl(219, 29%, 14%)"
               borderRadius="5px"
               p="1.7em"
             >
               <Flex>
                 <Flex flex="1" w="100%" alignItems="center">
-                  <Image src={Patrick} boxSize="40px" borderRadius="50%" alt="Daniel-avatar" />
+                  <Image
+                    src={Patrick}
+                    boxSize="40px"
+                    borderRadius="50%"
+                    alt="Daniel-avatar"
+                  />
                 </Flex>
                 <Box flex="11">
                   <Text
