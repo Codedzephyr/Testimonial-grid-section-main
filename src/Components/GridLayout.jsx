@@ -5,6 +5,7 @@ import Jonathan from "../images/image-jonathan.jpg";
 import Kira from "../images/image-kira.jpg";
 import Patrick from "../images/image-patrick.jpg";
 import Jeanette from "../images/image-jeanette.jpg";
+import quotations from "../images/bg-pattern-quotation.svg";
 import { Box, Flex } from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
@@ -42,13 +43,15 @@ const GridLayout = () => {
               xl: "repeat(5,1fr)",
             }}
             gap="20px"
-            my="2.5rem"
+            my="2rem"
           >
             <GridItem
               rowSpan={1}
               colSpan={{ sm: "1", md: "1", lg: "3", xl: "3" }}
               bgColor=" hsl(263, 55%, 52%)"
-              bgImage="url('../src')"
+              bgImage={quotations}
+              bgSize= {{sm: "40%", md: "40%", lg: "20%", xl: "20%" }}
+              bgPosition="81% 0%"
               borderRadius="5px"
               bgRepeat="no-repeat"
               p="1.7em"
@@ -64,7 +67,6 @@ const GridLayout = () => {
                 </Flex>
                 <Box flex={{ xsml: "3", sm: "5", md: "10", lg: "7", xl: "11" }}>
                   <Text
-                    mt="0.4rem"
                     color=" hsl(0, 0%, 100%)"
                     fontSize="clamp(0.6rem,10vw,0.9rem)"
                     fontWeight="600"
@@ -144,7 +146,7 @@ const GridLayout = () => {
                 </Box>
               </Flex>
               <Text
-                mt="1.6rem"
+                mt="1.4rem"
                 lineHeight="1.3"
                 color=" hsl(0, 0%, 100%)"
                 fontWeight="600"
@@ -167,6 +169,7 @@ const GridLayout = () => {
               </Text>
             </GridItem>
             <GridItem
+              gridArea={{ sm: "5", md: "5" }}
               rowSpan={{ sm: "1", md: "1", lg: "2", xl: "2" }}
               bgColor="hsl(0, 0%, 100%)"
               borderRadius="5px"
@@ -205,7 +208,7 @@ const GridLayout = () => {
                 opacity="70%"
                 fontWeight="600"
                 lineHeight="1.3"
-                fontSize="clamp(1.1rem,10vw,0.9rem)"
+                fontSize="clamp(1.1rem,10vw,1.4rem)"
                 fontFamily="'Barlow Semi Condensed', sans-serif"
               >
                 Such a life-changing experience. Highly recommended!
@@ -277,7 +280,7 @@ const GridLayout = () => {
                 color="hsl(219, 29%, 14%)"
                 fontWeight="600"
                 opacity="90%"
-                fontSize="clamp(1.1rem,10vw,0.9rem)"
+                fontSize="clamp(1.1rem,10vw,1.4rem)"
               >
                 An overall wonderful and rewarding experience
               </Text>
@@ -336,7 +339,7 @@ const GridLayout = () => {
                 color=" hsl(0, 0%, 100%)"
                 fontWeight="600"
                 lineHeight="1.3"
-                fontSize="clamp(1.45rem,10vw,0.9rem)"
+                fontSize="clamp(1.35rem,10vw,0.9rem)"
               >
                 Awesome teaching support from TAs who did the bootcamp
                 themselves. Getting guidance from them and learning from their
