@@ -280,12 +280,12 @@ const GridLayout = () => {
                 color="hsl(219, 29%, 14%)"
                 fontWeight="600"
                 opacity="90%"
-                fontSize="clamp(1.1rem,10vw,1.4rem)"
+                fontSize="clamp(1.1rem,10vw,1.2rem)"
               >
                 An overall wonderful and rewarding experience
               </Text>
               <Text
-                mt="1.4rem"
+                mt="1.1rem"
                 ml="0.2rem"
                 color="hsl(219, 29%, 14%)"
                 opacity="70%"
