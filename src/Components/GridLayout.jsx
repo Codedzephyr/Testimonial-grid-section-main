@@ -50,7 +50,7 @@ const GridLayout = () => {
               colSpan={{ sm: "1", md: "1", lg: "3", xl: "3" }}
               bgColor=" hsl(263, 55%, 52%)"
               bgImage={quotations}
-              bgSize= {{sm: "40%", md: "40%", lg: "20%", xl: "20%" }}
+              bgSize={{ sm: "40%", md: "40%", lg: "20%", xl: "20%" }}
               bgPosition="81% 0%"
               borderRadius="5px"
               bgRepeat="no-repeat"
