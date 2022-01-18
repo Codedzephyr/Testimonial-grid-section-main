@@ -32,7 +32,7 @@ const GridLayout = () => {
   return (
     <ChakraProvider theme={theme}>
       <div>
-        <Center w="100%" bgColor="hsl(0, 0%, 81%)">
+        <Center w="100%" bgColor=" hsl(210, 46%, 95%)">
           <Grid
             w="95%"
             maxW="1280px"
